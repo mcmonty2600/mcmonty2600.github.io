@@ -1,5 +1,5 @@
 # HTML/CSS/JavaScript X-Wing Targeting Computer
-<div markdown="1">
+<div style="position:relative"> markdown="1">
 Luke, you've turned off your targeting computer, is everything OK?!?
 
 Re-watching the final x-wing assault on the Death Star in Episode IV recently, I found myself really paying attention to the technology we see employed in the fighters. The centerpiece technonlogy here is the "targeting computer" that the x-wing pilots use to visualize their position in the trenches and determine how far away the are from their final target, the thermal exhaust port. A sort of heads-up display that the pilot looks into, with its one-point perspective, minimalist vector-like graphics, and the feeling it gives of high speed motion, this is really the height of rebel pilot-assist technology.
@@ -148,6 +148,7 @@ Anyhow, after this YouTube-enabled nostalgia session I was inspired to see if I 
 })();
 </script>
 
+<div style="position:relative" markdown="1">
 ## Notes
 
 I didn't get too far before I realized there was going to be some trigonometry required. I always find myself wishing my trigonometry was more solid. I spent (way too much) time searching the Internet trying to find the right trig functions so I could calculate things like where to start drawing the vertical lines of the trench walls so they line up with the diagonal perspective lines. It took a lot of trial-and-error, and it works; but there might be better ways.
@@ -155,3 +156,4 @@ I didn't get too far before I realized there was going to be some trigonometry r
 I noticed in the movie that, as you'd expect, the walls of the trench move faster as they get "closer", i.e., towards the edge of the display. I wasn't sure the proper way to do this to create realistic perspective, but I tried accelerating the horizontal lines with `x += V*x;` where v is the "velocity factor" and this seemed good enough.
 
 This is implemented as an endless loop. In actuality, this trench comes to an end and at the end is the thermal exhaust port, visualized as a sort of target. I didn't get around to that yet...
+</div>
