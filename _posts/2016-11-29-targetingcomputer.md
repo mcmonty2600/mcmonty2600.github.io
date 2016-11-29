@@ -1,7 +1,7 @@
 # HTML/CSS/JavaScript X-Wing Targeting Computer
-
+<div markdown="1">
 Luke, you've turned off your targeting computer, is everything OK?!?
-<div>
+
 Re-watching the final x-wing assault on the Death Star in Episode IV recently, I found myself really paying attention to the technology we see employed in the fighters. The centerpiece technonlogy here is the "targeting computer" that the x-wing pilots use to visualize their position in the trenches and determine how far away the are from their final target, the thermal exhaust port. A sort of heads-up display that the pilot looks into, with its one-point perspective, minimalist vector-like graphics, and the feeling it gives of high speed motion, this is really the height of rebel pilot-assist technology.
 
 Luke doesn't end up using the targeting computer for his final shot, of course. He deactivates it and decides to take out the Death Star in manual mode.
@@ -12,8 +12,13 @@ Anyhow, after this YouTube-enabled nostalgia session I was inspired to see if I 
 </div>
 
 <style>
-.tube {
+#tube_container {
+  position:relative;
+  height:500px;
+  width: 700px;
+}
 
+.tube {
   position: absolute; /*allows div to overlap */
   left: 50px;
   top: 40px;
@@ -23,28 +28,27 @@ Anyhow, after this YouTube-enabled nostalgia session I was inspired to see if I 
 }
 
 .outline {
-  z-index:-30;
   box-sizing: border-box;
   border-style:solid;
   border-width: 6px;
-  background-color: rgba(10, 5, 2, 1);
 }
 
 .glow {
-  z-index:-10;
   background: -webkit-radial-gradient(center center, contain, rgba(150,140,100,1), rgba(10,5,2,1)) center center no-repeat, black;
   opacity:0.2;
 }
 
 #gridCanvas
 {
-  z-index: -20;
+  background-color: rgba(10, 5, 2, 1);
 }
 </style>
 
-<div class="tube glow" height="400" width="640"></div>
-<div class ="tube outline" height="400" width="640"></div>
-<canvas class = "tube" id="gridCanvas" height="400" width="640"></canvas>
+<div id="tube_container">
+  <canvas class = "tube" id="gridCanvas" height="400" width="640"></canvas>
+  <div class="tube glow" height="400" width="640"></div>
+  <div class ="tube outline" height="400" width="640"></div>
+</div>
 
 <script>
 (function() {
