@@ -1,7 +1,7 @@
 # HTML/CSS/JavaScript X-Wing Targeting Computer
 
 Luke, you've turned off your targeting computer, is everything OK?!?
-
+<div>
 Re-watching the final x-wing assault on the Death Star in Episode IV recently, I found myself really paying attention to the technology we see employed in the fighters. The centerpiece technonlogy here is the "targeting computer" that the x-wing pilots use to visualize their position in the trenches and determine how far away the are from their final target, the thermal exhaust port. A sort of heads-up display that the pilot looks into, with its one-point perspective, minimalist vector-like graphics, and the feeling it gives of high speed motion, this is really the height of rebel pilot-assist technology.
 
 Luke doesn't end up using the targeting computer for his final shot, of course. He deactivates it and decides to take out the Death Star in manual mode.
@@ -9,6 +9,7 @@ Luke doesn't end up using the targeting computer for his final shot, of course. 
 This is an important moment: his realization that he has a better chance going by his (Jedi) instincts. I was struck on this viewing what a big risk he was taking here. It's one thing to follow this instinct-based approach for your own endeavors. But he had an entire planet and probably the bulk of the rebel forces counting on him to make that one shot. If he misses after turning off his targeting device... suffice to say history would have remembered him differently. To be safe, I probably would have gone with the targeting computer. Now that I think about it, Luke really should have used the targeting computer PLUS his Jedi instincts. This would have maximized his chances...
 
 Anyhow, after this YouTube-enabled nostalgia session I was inspired to see if I could work up a JavaScript version of the targeting computer itself. Here it is, and it uses just a little more code than will fit in the palm of your hand!
+</div>
 
 <style>
 .tube {
@@ -44,8 +45,8 @@ Anyhow, after this YouTube-enabled nostalgia session I was inspired to see if I 
 <div class="tube glow" height="400" width="640"></div>
 <div class ="tube outline" height="400" width="640"></div>
 <canvas class = "tube" id="gridCanvas" height="400" width="640"></canvas>
-<script>
 
+<script>
 (function() {
 
   var c=document.getElementById("gridCanvas");
@@ -141,7 +142,6 @@ Anyhow, after this YouTube-enabled nostalgia session I was inspired to see if I 
   }
 
 })();
-
 </script>
 
 ## Notes
