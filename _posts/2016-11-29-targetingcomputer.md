@@ -19,7 +19,8 @@ Anyhow, after this YouTube-enabled nostalgia session I was inspired to see if I 
 }
 
 .tube {
-  position: absolute; /*allows div to overlap */
+  position: absolute; 
+  color: rgba(240, 210, 0, 1);
   left: 50px;
   top: 40px;
   width: 680px;
