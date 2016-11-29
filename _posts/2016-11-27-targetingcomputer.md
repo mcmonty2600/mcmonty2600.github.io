@@ -27,7 +27,8 @@ html,body {
   background: -webkit-radial-gradient(center center, contain, rgba(150,140,100,1), rgba(10,5,2,1)) center center no-repeat, black;
   opacity:0.2;
 }
-<style>
+</style>
+
 <div class="tube glow" height="400" width="640"></div>
 <div class ="tube outline" height="400" width="640"></div>
 <canvas class = "tube" id="gridCanvas" height="400" width="640"></canvas>
@@ -148,5 +149,6 @@ html,body {
   }
 
 })();
+
 </script>
 
