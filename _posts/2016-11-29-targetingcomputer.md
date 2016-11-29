@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello"
+title: "targeting-computer"
 date: 2016-11-27
 ---
 
