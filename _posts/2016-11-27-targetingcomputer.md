@@ -1,12 +1,6 @@
 # Test
 
 <style>
-html,body {
-  color: rgba(240, 210, 0, 1);
-  margin:0;
-  background-color: rgba(0, 0, 0, 1);
-}
-
 .tube {
 
   position: absolute; /*allows div to overlap */
@@ -88,7 +82,6 @@ html,body {
       ctx.stroke();
     }
   }
-
 
   var staticImage = ctx.getImageData(0,0,w,h);
 
