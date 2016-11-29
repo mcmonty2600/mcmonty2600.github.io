@@ -4,7 +4,7 @@
 html,body {
   color: rgba(240, 210, 0, 1);
   margin:0;
-  background-color: rgba(5, 5, 5, 1);
+  /*background-color: rgba(5, 5, 5, 1);*/
 }
 
 .tube {
