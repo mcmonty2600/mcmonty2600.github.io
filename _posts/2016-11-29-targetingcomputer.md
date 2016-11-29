@@ -1,4 +1,11 @@
+---
+layout: post
+title: "Hello"
+date: 2016-11-27
+---
+
 # HTML/CSS/JavaScript X-Wing Targeting Computer
+
 <div style="position:relative" markdown="1">
 Luke, you've turned off your targeting computer, is everything OK?!?
 
