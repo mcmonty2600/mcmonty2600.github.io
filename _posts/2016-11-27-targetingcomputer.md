@@ -4,10 +4,11 @@
 html,body {
   color: rgba(240, 210, 0, 1);
   margin:0;
-  /*background-color: rgba(5, 5, 5, 1);*/
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .tube {
+
   position: absolute; /*allows div to overlap */
   left: 50px;
   top: 40px;
@@ -17,15 +18,22 @@ html,body {
 }
 
 .outline {
+  z-index:-30;
   box-sizing: border-box;
   border-style:solid;
   border-width: 6px;
+  background-color: rgba(10, 5, 2, 1);
 }
 
 .glow {
-  z-index:-1;
+  z-index:-10;
   background: -webkit-radial-gradient(center center, contain, rgba(150,140,100,1), rgba(10,5,2,1)) center center no-repeat, black;
   opacity:0.2;
+}
+
+#gridCanvas
+{
+  z-index: -20;
 }
 </style>
 
@@ -42,12 +50,6 @@ html,body {
   var h = ctx.canvas.height;
   var cx = w/2;
   var cy = h/2;
-  /*
-  var offset1 = 0.2*h;  // endpoint of perspective line #1 on outer vertical edge of canvas
-  var offset2 = 0.43*w; // endpoint of perspective line #2 on outer horizontal edge of canvas
-  var offset3 = 0.25*w; // endpoint of perspective line #3 on outer horizontal edge of canvas
-  var theta1 = Math.atan((h/2)/offset3);
-  */
   var theta_mid = Math.atan((h/2)/(w/2)); // angle to the corner of the canvas
   var thetas = [0.25, 0.66, 0.9]; // angles of perspective lines
   dx = Math.cos(thetas[2]);
@@ -59,20 +61,7 @@ html,body {
   ctx.strokeStyle = gridColor;
   ctx.lineWidth = 4;
 
-  // diagonal lines
-  /*
-  var endpoints = [{x:w,y:cy+offset1}, {x:0,y:cy+offset1},{x:w,y:cy-offset1},{x:0,y:cy-offset1}];
-  endpoints = endpoints.concat([ {x:cx+offset2,y:h}, {x:cx-offset2,y:h},{x:cx+offset2,y:0},{x:cx-offset2,y:0} ])
-  endpoints = endpoints.concat([ {x:cx+offset3,y:h}, {x:cx-offset3,y:h},{x:cx+offset3,y:0},{x:cx-offset3,y:0} ])
-  ctx.beginPath();
-  for(i=0; i<endpoints.length;i++)
-  {
-    ctx.moveTo(cx,cy);
-    ctx.lineTo(endpoints[i].x, endpoints[i].y);
-    ctx.stroke();
-  }
-  */
-
+  // diagonal perspective lines
   ctx.beginPath();
   for(i=0; i<3;i++)
   {
