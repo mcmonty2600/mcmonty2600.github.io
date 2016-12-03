@@ -172,5 +172,5 @@ I noticed in the movie that, as you'd expect, the walls of the trench move faste
 
 This is implemented as an endless loop. In actuality, this trench comes to an end and at the end is the thermal exhaust port, visualized as a sort of target. I didn't get around to that yet...
 
-{%3b31674e8896ef24e9d31afaf796bbaf%}
+{% 3b31674e8896ef24e9d31afaf796bbaf %}
 </div>
