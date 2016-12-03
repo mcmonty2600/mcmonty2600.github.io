@@ -74,10 +74,9 @@ Anyhow, after this YouTube-enabled nostalgia session I was inspired to see if I 
   var gridColor = 'rgba(240, 210, 0, 1)'
   var distanceIndicatorColor = 'rgba(200, 0, 0, 1)'
 
+  // Draw the diagonal "perspective lines"
   ctx.strokeStyle = gridColor;
   ctx.lineWidth = 4;
-
-  // diagonal perspective lines
   ctx.beginPath();
   for(i=0; i<3;i++)
   {
@@ -104,51 +103,60 @@ Anyhow, after this YouTube-enabled nostalgia session I was inspired to see if I 
       ctx.stroke();
     }
   }
-
+  // Up to here the image doesn't change frame-to-frame. So take a snapshot and refdraw in render loop.
   var staticImage = ctx.getImageData(0,0,w,h);
 
-  // setup for render loop
-  var darr = [10];
-  var distanceIndicatorLinePos = w/2;
+  // Vertical wall-lines
+  const VWALL_START = 10;
+  const VWALL_X_CREATE_NEW = 30; // Create a new vertical wall-line when the last wall-line reaches this x
+  const VWALL_SPEED_FACTOR = 0.125;
+  var vline_arr_x = [VWALL_START]; // Array of vertical wall-line x-positions
+  // Red "distance-to-target" vertical lines
+  var dtt_line_x = w/2;
+
   setInterval(render_loop, 33); /*30 FPS*/
 
   function render_loop ()
   {
     ctx.clearRect(0, 0, w, h);
     ctx.putImageData(staticImage,0,0);
+
+    // Draw the vertical wall lines.
     ctx.strokeStyle = gridColor;
     ctx.lineWidth = 4;
-    if (darr[0] > 30)
+
+    if (vline_arr_x[0] > VWALL_X_CREATE_NEW) // Once the last wall-line hits this point, create a new wall-line
     {
-      darr.unshift(10);
+      vline_arr_x.unshift(VWALL_START);
     }
-    for (i=0; i<darr.length;i++)
+    for (i=0; i<vline_arr_x.length;i++)
     {
-      d = darr[i];
+      d = vline_arr_x[i];
       ctx.beginPath();
       ctx.moveTo(cx+d*dx,cy-d*dy);
       ctx.lineTo(cx+d*dx,cy+d*dy);
       ctx.lineTo(cx-d*dx,cy+d*dy);
       ctx.lineTo(cx-d*dx,cy-d*dy);
       ctx.stroke();
-      darr[i]+=0.125*darr[i]; // the closer to the edge, the faster the line moves
-      if (darr[i]*dx>w) // off screen
+      vline_arr_x[i]+=VWALL_SPEED_FACTOR*vline_arr_x[i]; // the closer to the edge, the faster the line moves
+      if (vline_arr_x[i]*dx>w) // vertical line is off screen
       {
-        darr.pop();
+        vline_arr_x.pop();
       }
     }
+    // Draw the two red "distance-to-target indicator" vertical lines
     ctx.lineWidth = 8;
     ctx.strokeStyle = distanceIndicatorColor;
     ctx.beginPath();
-    ctx.moveTo(cx+distanceIndicatorLinePos,0);
-    ctx.lineTo(cx+distanceIndicatorLinePos,h);
-    ctx.moveTo(cx-distanceIndicatorLinePos,0);
-    ctx.lineTo(cx-distanceIndicatorLinePos,h);
+    ctx.moveTo(cx+dtt_line_x,0);
+    ctx.lineTo(cx+dtt_line_x,h);
+    ctx.moveTo(cx-dtt_line_x,0);
+    ctx.lineTo(cx-dtt_line_x,h);
     ctx.stroke();
-    distanceIndicatorLinePos -= 1;
-    if (distanceIndicatorLinePos == 0)
+    dtt_line_x -= 1;
+    if (dtt_line_x <= 0)
     {
-      distanceIndicatorLinePos = w/2;
+      dtt_line_x = w/2;
     }
   }
 
