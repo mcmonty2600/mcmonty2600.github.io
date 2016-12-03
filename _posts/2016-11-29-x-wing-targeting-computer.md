@@ -163,4 +163,6 @@ I didn't get too far before I realized there was going to be some trigonometry r
 I noticed in the movie that, as you'd expect, the walls of the trench move faster as they get "closer", i.e., towards the edge of the display. I wasn't sure the proper way to do this to create realistic perspective, but I tried accelerating the horizontal lines with `x += V*x;` where v is the "velocity factor" and this seemed good enough.
 
 This is implemented as an endless loop. In actuality, this trench comes to an end and at the end is the thermal exhaust port, visualized as a sort of target. I didn't get around to that yet...
+
+{%3b31674e8896ef24e9d31afaf796bbaf%}
 </div>
