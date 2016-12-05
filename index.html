@@ -3,13 +3,15 @@ layout: default
 title: mcmonty2600
 ---
 
+<h2> Hello </h2>
+
 <ul>
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>
+      <br>
       {{ post.excerpt | strip_html}}
-      </p>
+      <a href="{{ post.url }}"> more...</a>
     </li>
   {% endfor %}
 </ul>
