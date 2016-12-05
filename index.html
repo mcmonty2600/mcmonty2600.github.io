@@ -9,10 +9,9 @@ title: mcmonty2600
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a> 
-      <p>
       {{ post.excerpt | strip_html}}
+      <br>
       <a href="{{ post.url }}"> more...</a>
-      </p>
     </li>
   {% endfor %}
 </ul>
