@@ -2,7 +2,7 @@
 layout: post
 title: "HTML/CSS/JavaScript X-Wing Targeting Computer"
 date: 2016-11-27
-excerpt: A little Javascript exercise to mock-up the famous pilot assist technology
+excerpt: A little Javascript exercise to mock-up the famous pilot assist technology.
 ---
 
 <div style="position:relative" markdown="1">
