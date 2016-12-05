@@ -2,13 +2,14 @@
 layout: post
 title: "HTML/CSS/JavaScript X-Wing Targeting Computer"
 date: 2016-11-27
+excerpt: A little Javascript exercise to mock-up the famous pilot assist technology
 ---
 
 <div style="position:relative" markdown="1">
 
 *You've switched off your targeting computer, what's wrong?!?*
 
-Re-watching the final x-wing assault on the Death Star in Episode IV recently, I found myself really admiring the technology we see employed in the fighters. The centerpiece technonlogy here is the "targeting computer" that the x-wing pilots use to visualize their position in the trenches and determine how far away the are from their final target, the thermal exhaust port. A sort of heads-up display that the pilot peers into, with its one-point perspective, minimalist vector-like graphics, and the feeling it gives of high speed motion, this is really the height of rebel pilot-assist technology.
+Re-watching the final x-wing assault on the Death Star in Episode IV recently, I found myself again admiring the technology we see in the interiors of the fighters. The most memorable element here (in my opinion) is the "targeting computer" that the x-wing pilots use to visualize their position in the trenches and determine how far away the are from their final target, the thermal exhaust port. A sort of heads-up display that the pilot peers into, with its one-point perspective, minimalist vector-like graphics, and the feeling it gives of high speed motion, this is really the height of rebel pilot-assist technology.
 
 Luke doesn't end up using the targeting computer for his final shot, of course. He deactivates it and decides to take out the Death Star in manual mode. Given what was at stake (entire planet) he really should have used his Jedi instincts PLUS the targeting computer. This would have maximized his chances...
 
