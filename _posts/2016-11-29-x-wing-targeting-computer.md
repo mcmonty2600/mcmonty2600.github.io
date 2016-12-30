@@ -9,11 +9,11 @@ excerpt: A little Javascript exercise to mock-up the famous pilot assist technol
 
 *You've switched off your targeting computer, what's wrong?!?*
 
-Re-watching the final x-wing assault on the Death Star in Episode IV recently, I found myself again admiring the technology we see in the interiors of the fighters. The most memorable element here (in my opinion) is the "targeting computer" that the x-wing pilots use to visualize their position in the trenches and determine how far away the are from their final target, the thermal exhaust port. A sort of heads-up display that the pilot peers into, with its one-point perspective, minimalist vector-like graphics, and the feeling it gives of high speed motion, this is really the height of rebel pilot-assist technology.
+In my ample free time I like to rewatch my favorite scenes from Episode IV, and in a recent viewing of the final Death Start assault I found myself again admiring the technology we see in the dashboards of the fighters. The most memorable element here (in my opinion) is the "targeting computer" that the x-wing pilots use to visualize their position in the trenches and determine how far away the are from their final target, the thermal exhaust port. A sort of heads-up display that the pilot peers into, with its one-point perspective, minimalist graphics, and the feeling it gives of high speed motion, this is really the height of rebel pilot-assist technology.
 
-Luke doesn't end up using the targeting computer for his final shot, of course. He deactivates it and decides to take out the Death Star in manual mode. Given what was at stake (entire planet) he really should have used his Jedi instincts PLUS the targeting computer. This would have maximized his chances...
+Who programmed the original graphics for these scenes, and I wonder what platform was used? A google search yielded nothing on the topic...
 
-Anyhow, after this YouTube-enabled nostalgia session I was inspired to see if I could work up a JavaScript version of the targeting computer itself. Here it is, and it uses just a little more code than will fit in the palm of your hand!
+But I was inspired to see if I could work up a JavaScript version. Here it is, and it uses just a little more code than will fit in the palm of your hand!
 
 [Link to Gist](https://gist.github.com/mcmonty2600/3b31674e8896ef24e9d31afaf796bbaf).
 
@@ -27,7 +27,7 @@ Anyhow, after this YouTube-enabled nostalgia session I was inspired to see if I 
 }
 
 .tube {
-  position: absolute; 
+  position: absolute;
   color: rgba(240, 210, 0, 1);
   left: 50px;
   top: 40px;
