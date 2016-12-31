@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dealing with variables 1977"
+title: "Dealing with variables 1975"
 date: 2016-12-30
 excerpt:
 ---
