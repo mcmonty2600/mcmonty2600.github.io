@@ -3,14 +3,13 @@ layout: default
 title: mcmonty2600 links
 ---
 
-More than a list of links. My favorite pages to refresh my memory on various topics.
+Refresh my memory on various topics.
 
 ## Assembly
 
 ## C
 
 [Linker](http://www.bravegnu.org/gnu-eprog/linker.html)
-
 Detailed page showing how the linker combines object files to generate a final executable
 
 [A Simple Makefile Tutorial](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
