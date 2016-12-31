@@ -9,7 +9,8 @@ Refresh my memory on various topics.
 
 ## C
 
-[Linker](http://www.bravegnu.org/gnu-eprog/linker.html)
+[Linker](http://www.bravegnu.org/gnu-eprog/linker.html)  
+
 Detailed page showing how the linker combines object files to generate a final executable
 
 [A Simple Makefile Tutorial](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
