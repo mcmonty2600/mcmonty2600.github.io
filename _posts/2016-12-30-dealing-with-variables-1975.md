@@ -5,7 +5,7 @@ date: 2016-12-30
 excerpt:
 ---
 
-In my abundant free time I like to browse early issues of Byte magazine. I own no paper copies at this time, but I can go to this [archive](https://archive.org/details/byte-magazine), set the date filters to '75, '76, and '77, kick back and enjoy ...
+In my abundant free time I like to browse early issues of BYTE magazine. All issues are available at this  [archive](https://archive.org/details/byte-magazine). I can set the date filters to '75, '76, and '77, kick back and enjoy ...
 
 There is an intersting article in the very first issue (1975) titled *Write Your Own Assembler* [1]. I have no realistic goal/desire to actually write an assembler, but the topic is interesting to me because sometimes when in a reflective mood I will wonder: what is really going on with these variables that I'm using, where are they physically placed in memory with respect to the rest of the program, how does the machine know where to find them, etc?" These are huge questions involving compiler details and processor architecture. What is great about early sources like this article is that things were simpler back then, and thus easier to understand, and can provide context for the solutions that we take for granted in modern systems.
 
