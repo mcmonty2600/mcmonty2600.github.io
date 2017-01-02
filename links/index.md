@@ -6,6 +6,14 @@ title: mcmonty2600 links
 
 ## Historical Documents
 
+### KIM-1
+
+[The First Book of KIM](http://www.kim-1.com/files/tfbok.pdf)
+
+[KIM-1 User Manual](http://www.kim-1.com/usrman.htm)
+
+### Misc
+
 [Machine Language Programming for the '8008' (and Similar Microcomputers)](http://www.scelbi.com/files/docs/books/Machine%20Language%20Programming%20For%20The%208008.pdf)
 
 [BYTE Magazine Archive](https://archive.org/details/byte-magazine)
@@ -15,7 +23,6 @@ title: mcmonty2600 links
 ### C
 
 [Linker](http://www.bravegnu.org/gnu-eprog/linker.html)
-
 Detailed page showing how the linker combines object files to generate a final executable
 
 [A Simple Makefile Tutorial](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
