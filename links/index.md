@@ -22,15 +22,13 @@ title: mcmonty2600 links
 
 ### C
 
-[Linker](http://www.bravegnu.org/gnu-eprog/linker.html)
-Detailed page showing how the linker combines object files to generate a final executable
+[Linker](http://www.bravegnu.org/gnu-eprog/linker.html). Details how the linker combines object files to generate a final executable
 
 [A Simple Makefile Tutorial](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
 
 ### I2C
 
-[Using the I2C Bus](http://www.robot-electronics.co.uk/i2c-tutorial)
-A very clear explanation of I2C operation, including easy-to-read bit sequence diagrams
+[Using the I2C Bus](http://www.robot-electronics.co.uk/i2c-tutorial). A very clear explanation of I2C operation, including easy-to-read bit sequence diagrams
 
 
 ## Other
