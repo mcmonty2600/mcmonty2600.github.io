@@ -8,6 +8,11 @@ body {
     font-family : verdana;
     line-height: 1.5;
 }
+p {
+    font-size:9pt;
+    line-height: 1.5;
+    color:#c0c0c0;
+}
 nav {
     color:#00E436;
 }
@@ -23,7 +28,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #83769C;
 }
 a:hover {
     text-decoration: underline;
@@ -33,11 +38,6 @@ h1 {
     font-size: 3em;
     font-family:verdana;
     color : #29ADFF;
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color:#c0c0c0;
 }
 footer {
     border-top: 1px solid #d5d5d5;
