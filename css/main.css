@@ -9,8 +9,7 @@ body {
     line-height: 1.5;
 }
 nav {
-    background-color:#FFA000;
-    color:#c0c0c0;
+    color:#00E436;
 }
 nav ul, footer ul {
     font-family : verdana;
@@ -32,7 +31,8 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:verdana;
+    color : #29ADFF;
 }
 p {
     font-size: 1.5em;
