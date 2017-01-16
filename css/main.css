@@ -2,8 +2,8 @@ body {
     margin: 60px auto;
     width: 60%;
     color:#c0c0c0;
-	padding:0px;
-	background-color:#303030;
+    padding:0px;
+    background-color:#303030;
     font-size : 9pt;
     font-family : verdana;
 }
@@ -31,7 +31,7 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color:#c0c0c0;
 }
 footer {
     border-top: 1px solid #d5d5d5;
