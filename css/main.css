@@ -1,11 +1,12 @@
 body {
     margin: 60px auto;
     width: 60%;
-    color:#c0c0c0;
     padding:0px;
+    color:#c0c0c0;
     background-color:#303030;
     font-size : 9pt;
     font-family : verdana;
+    line-height: 1.5;
 }
 nav {
     background-color:#FFA000;
