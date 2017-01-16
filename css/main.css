@@ -1,6 +1,7 @@
 body {
     margin: 60px auto;
     width: 60%;
+    font-size:9pt;
     font-family:'Verdana', 'Arial', 'Sans-Serif';
 }
 nav ul, footer ul {
