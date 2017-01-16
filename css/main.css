@@ -7,6 +7,10 @@ body {
     font-size : 9pt;
     font-family : verdana;
 }
+nav {
+    background-color:#FFA000;
+    color:#c0c0c0;
+}
 nav ul, footer ul {
     font-family : verdana;
     padding: 0px;
@@ -23,6 +27,7 @@ a {
 }
 a:hover {
     text-decoration: underline;
+    color: #83769C;
 }
 h1 {
     font-size: 3em;
