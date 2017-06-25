@@ -5,9 +5,7 @@ date: 2016-12-30
 excerpt:
 ---
 
-I just discovered all issues of BYTE magazine can be viewed or downloaded at this [archive](https://archive.org/details/byte-magazine). In my plentiful free time I like to head over there, set the date filters to '75, '76, and '77, and browse away...
-
-There are lots of really awesome pictures of computers from this period, e.g. the KIM-1. But I also find that I learn a lot from the technical articles from these early issues. These address topics that are of interest today, but reference much simpler hardware, pre-date many of the concepts we take for granted, and make a different set of assumptions about the knowledge of the reader. Overall, they give a very different perspective on some familiar topics and this makes them fun to read, and can make one look at things in a fresh way.
+I just discovered all issues of BYTE magazine can be viewed or downloaded at this [archive](https://archive.org/details/byte-magazine). 
 
 There is an intersting article in the very first issue (1975) titled *Write Your Own Assembler* [1]. I have no realistic goal/desire to actually write an assembler, but I have read this article a couple of times now and have learned a few things on each reading. Its approach is to start out by imagining the simplest of assemblers and then point out the issues that come up. So we know that one of the most useful things an assembler gives you over machine language is the ability to use variable names. But how exactly is this implemented? In the example given, an assembly instruction (a "pseudo-op") will tell the assembler to reserve a certain memory location to store the variable value, and when generating machine code, the assembler will replace the variable name with this physical memory location. Fine, but where in memory will this variable reside? In the simplest case, an assembler parsing sequentially would simply locate the variable immediately after the sequence of machine instructions that have been generated up to the point of its declaration.
 

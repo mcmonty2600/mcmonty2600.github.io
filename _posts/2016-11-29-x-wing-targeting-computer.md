@@ -2,18 +2,16 @@
 layout: post
 title: "HTML/CSS/JavaScript X-Wing Targeting Computer"
 date: 2016-11-27
-excerpt: A Javascript exercise involving the famous pilot assist technology.
+excerpt: A Javascript exercise of the famous pilot-assist technology
 ---
 
 <div style="position:relative" markdown="1">
 
 *You've switched off your targeting computer, what's wrong?!?*
 
-In my abundant free time I like to rewatch my favorite scenes from Episode IV, and in a recent viewing of the final Death Start assault I found myself again admiring the technology we see in the dashboards of the fighters. The most memorable element here (in my opinion) is the "targeting computer" that the x-wing pilots use to visualize their position in the trenches and determine how far away the are from their final target, the thermal exhaust port. A sort of heads-up display that the pilot peers into, with its one-point perspective, minimalist graphics, and the feeling it gives of high speed motion, this is really the height of rebel pilot-assist technology.
+This is an exercise in Javascript to create the "targeting computer" that the x-wing pilots use to visualize their position in the trenches. It closes in on some final posistion but does not include the thermal exhaust port.
 
-Who programmed the original graphics for these scenes, and I wonder what platform was used? A google search yielded nothing on the topic...
-
-But I was inspired to see if I could work up a JavaScript version. Here it is, and it uses just a little more code than will fit in the palm of your hand!
+What kind of hardware and software was used for the original prop, as seen in the movie?
 
 [Link to Gist](https://gist.github.com/mcmonty2600/3b31674e8896ef24e9d31afaf796bbaf).
 
