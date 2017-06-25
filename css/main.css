@@ -1,10 +1,23 @@
 body {
     margin: 60px auto;
-    width: 70%;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    width: 60%;
+    padding: 0px;
+    color: #c0c0c0;
+    background-color: #303030;
+    font-size: 11pt;
+    font-family: "Verdana", sans-serif;
+    line-height: 2;
+}
+p {
+    font-size: 11pt;
+    line-height: 2;
+    color: #c0c0c0;
+}
+nav {
+    color : #00E436;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: "Verdana", sans-serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -15,19 +28,16 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #83769C;
 }
 a:hover {
     text-decoration: underline;
+    color: #83769C;
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+    font-family: "Verdana", sans-serif;
+    color : #29ADFF;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -36,7 +46,7 @@ footer {
 
 ul.posts { 
     margin: 20px auto 40px; 
-    font-size: 1.5em;
+    font-size: 10pt;
 }
 
 ul.posts li {
