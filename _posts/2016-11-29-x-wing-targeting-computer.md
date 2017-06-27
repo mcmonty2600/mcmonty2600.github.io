@@ -2,7 +2,7 @@
 layout: post
 title: "HTML/CSS/JavaScript X-Wing Targeting Computer"
 date: 2016-11-27
-excerpt: A Javascript exercise of the famous pilot-assist technology
+excerpt: A Javascript exercise of xwing pilot-assist technology
 ---
 
 <div style="position:relative" markdown="1">
@@ -11,7 +11,7 @@ excerpt: A Javascript exercise of the famous pilot-assist technology
 
 This is an exercise in Javascript to create the "targeting computer" that the x-wing pilots use to visualize their position in the trenches. It closes in on some final posistion but does not include the thermal exhaust port.
 
-What kind of hardware and software was used for the original prop, as seen in the movie?
+I wonder what kind of hardware and software was used for the original prop, as seen in the movie?
 
 [Link to Gist](https://gist.github.com/mcmonty2600/3b31674e8896ef24e9d31afaf796bbaf).
 
@@ -166,11 +166,9 @@ What kind of hardware and software was used for the original prop, as seen in th
 <div style="position:relative" markdown="1">
 ## Notes
 
-I didn't get too far before I realized there was going to be some trigonometry required. I always find myself wishing my trigonometry was more solid. I spent (way too much) time searching the Internet trying to find the right trig functions so I could calculate things like where to start drawing the vertical lines of the trench walls so they line up with the diagonal perspective lines. It took a lot of trial-and-error, and it works; but there might be better ways.
+I didn't get too far before I realized there was going to be some trigonometry required to deaw these lines. I spent much time trying to recal the right trig functions! It took a some trial-and-error, and it works; but likey there are better ways.
 
-I noticed in the movie that, as you'd expect, the walls of the trench move faster as they get "closer", i.e., towards the edge of the display. I wasn't sure the proper way to do this to create realistic perspective, but I tried accelerating the horizontal lines with `x += V*x;` where v is the "velocity factor" and this seemed good enough.
-
-This is implemented as an endless loop. In actuality, this trench comes to an end and at the end is the thermal exhaust port, visualized as a sort of target. I didn't get around to that yet...
+This is implemented as an endless loop. Reay, this trench should come to an end and show the target that represents the thermal exhaust port. I didn't get around to that yet...
 
 <script src="https://gist.github.com/mcmonty2600/3b31674e8896ef24e9d31afaf796bbaf.js"></script>
 
