@@ -7,6 +7,8 @@ excerpt:
 
 If you are building a custom board with a microcontroller IC on it, the question will arise: what are the options for getting your software binary onto the controllers non-volatile memory?
 
+Fundamentally, a processor can write to its own flash memory, and so write or modify its own instructions. A small program that
+
 ## Some background reading
 
 ### JTAG

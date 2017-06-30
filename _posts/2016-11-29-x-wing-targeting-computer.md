@@ -9,7 +9,7 @@ excerpt: A Javascript exercise of xwing pilot-assist technology
 
 *You've switched off your targeting computer, what's wrong?!?*
 
-This is an exercise in Javascript to create the "targeting computer" that the x-wing pilots use to visualize their position in the trenches.
+This is an exercise in Javascript to create the "targeting computer" that the x-wing pilots use to visualize their position while flying down trenches.
 
 I wonder what kind of hardware and software was used for the original prop, as seen in the movie?
 
@@ -166,9 +166,9 @@ I wonder what kind of hardware and software was used for the original prop, as s
 <div style="position:relative" markdown="1">
 ## Notes
 
-I didn't get too far before I realized there was going to be some trigonometry required to deaw these lines. I spent much time trying to recal the right trig functions! It took a some trial-and-error, and it works; but likey there are better ways.
+I didn't get too far before I realized there was going to be some trigonometry involved, not my strong suit. It works, but likey there are better ways.
 
-This is implemented as an endless loop. Really, this trench should come to an end and show the target that represents the thermal exhaust port. I didn't get around to that yet...
+This is implemented as an endless loop. Really, this trench should come to an end and then show the target that represents the thermal exhaust port. I didn't get around to that yet...
 
 <script src="https://gist.github.com/mcmonty2600/3b31674e8896ef24e9d31afaf796bbaf.js"></script>
 
