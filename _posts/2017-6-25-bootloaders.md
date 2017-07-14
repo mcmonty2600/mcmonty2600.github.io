@@ -48,7 +48,7 @@ The board [uses another microcontroller](https://www.pjrc.com/store/ic_mkl02.htm
 
 Once the bootloader is installed on the MK20's memory, the MK20 will be reset to begin executing this bootloader. Notice that the MKL04 does not have a USB connection to the external world. Therefore, loading of the application program into the MK20's memory is not done by the MKL04. The MK20 has an integrated USB controller. This is key, because once the bootloader program is running on the MK20, the writing of the application to the MK20's flash can be accomplished by the MK20 itself, through this USB connection.
 
-I am still uncertain of where the bootloader program is written to on the MK20. It might be written to the RAM, and not the flash. This would leave the entire flash memory avaialble to the application program.
+I am still uncertain of where the bootloader program is written to on the MK20. It might be written to the RAM, and not the flash. This would leave the entire flash memory avaialble to the application program. A good discussion is found [here](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforum.pjrc.com%2Fthreads%2F33341-Bootloader-sequence&data=01%7C01%7Cmike.montague%40maximintegrated.com%7Cd48280f70c324ddc197508d4c49b835a%7Cfbd909dfea694788a554f24b7854ad03%7C0&sdata=K%2Fc2b5aQFtDQ%2Fs1koLRnXO9pYrKGJUdgFTJJwwkSwis%3D&reserved=0)
 
 ### Case 2: NXP S32K144EVB Evaluation Board
 
