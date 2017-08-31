@@ -2,16 +2,14 @@
 layout: post
 title: "HTML/CSS/JavaScript X-Wing Targeting Computer"
 date: 2016-11-27
-excerpt: A Javascript exercise of xwing pilot-assist technology
+excerpt: A Javascript exercise of xwing targeting computer
 ---
 
 <div style="position:relative" markdown="1">
 
-*You've switched off your targeting computer, what's wrong?!?*
-
 This is an exercise in Javascript to create the "targeting computer" that the x-wing pilots use to visualize their position while flying down trenches.
 
-I wonder what kind of hardware and software was used for the original prop, as seen in the movie?
+This is implemented as an endless loop. Really, this trench should come to an end and then show the target that represents the thermal exhaust port. Future improvement...
 
 [Link to Gist](https://gist.github.com/mcmonty2600/3b31674e8896ef24e9d31afaf796bbaf).
 
@@ -164,11 +162,6 @@ I wonder what kind of hardware and software was used for the original prop, as s
 </script>
 
 <div style="position:relative" markdown="1">
-## Notes
-
-I didn't get too far before I realized there was going to be some trigonometry involved, not my strong suit. It works, but likey there are better ways.
-
-This is implemented as an endless loop. Really, this trench should come to an end and then show the target that represents the thermal exhaust port. I didn't get around to that yet...
 
 <script src="https://gist.github.com/mcmonty2600/3b31674e8896ef24e9d31afaf796bbaf.js"></script>
 
